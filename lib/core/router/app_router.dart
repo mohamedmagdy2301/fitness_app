@@ -12,7 +12,7 @@ abstract class AppRouter {
 
   static final GoRouter appRouter = GoRouter(
     navigatorKey: navigatorKey,
-    initialLocation: AppRoutes.start,
+    initialLocation: AppRoutes.home,
     // debugLogDiagnostics: true,
     routes: <RouteBase>[
       GoRoute(
