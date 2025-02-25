@@ -19,7 +19,16 @@ class MyApp extends StatelessWidget {
       child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
         themeMode: ThemeMode.dark,
-        theme: ThemeData.dark(),
+        theme: ThemeData(
+          brightness: Brightness.dark,
+          scaffoldBackgroundColor: Color(0xff121212),
+          appBarTheme: AppBarTheme(
+            backgroundColor: Color(0xff121212),
+            elevation: 0,
+            foregroundColor: Colors.white,
+            iconTheme: IconThemeData(color: Colors.white),
+          ),
+        ),
         routerConfig: AppRouter.appRouter,
       ),
     );
